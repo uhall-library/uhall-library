@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.933" height="34" viewBox="0 0 41.933 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <path id="list_view_icon" data-name="list view icon" class="cls-1" d="M5.9,18.1a3.4,3.4,0,1,0,3.4,3.4A3.4,3.4,0,0,0,5.9,18.1Zm0-13.6A3.4,3.4,0,1,0,9.3,7.9,3.4,3.4,0,0,0,5.9,4.5Zm0,27.2a3.4,3.4,0,1,0,3.4,3.4A3.41,3.41,0,0,0,5.9,31.7Zm6.8,5.667H44.433V32.833H12.7Zm0-13.6H44.433V19.233H12.7Zm0-18.133v4.533H44.433V5.633Z" transform="translate(-2.5 -4.5)"/>
+</svg>

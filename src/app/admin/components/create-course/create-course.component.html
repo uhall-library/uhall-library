@@ -1,0 +1,39 @@
+
+<app-course-home id="selection" class="selection"></app-course-home>
+<div class="programme-card" id="course-pane">
+    <div class="color-card">
+        <div class="color-code">
+
+            <div>
+                Course name
+            </div>
+            <input [(ngModel)]="courseName">
+        </div>
+  
+
+        <div class="profile-pic">
+            <p>Change picture by long pressing on image</p>
+            <input type="file" accept=".png, .jpg" multiple ="false" (change)="imagePreview($event)" class="img-input" id="file-input">
+            <img [src]="filePath" (click)="selectImage()">
+        </div>
+
+        <div class="profile-pic">
+            <p>Change the level and semester</p>
+          <button (click)="makeSelection()">Proceed</button>
+        </div>
+
+        <div class="choose-list">
+            <p>You choose</p>
+            <span><span class="bold-text">Level:</span> {{selectOptions.level}}</span>
+            <span><span class="bold-text">Semester:</span> {{selectOptions.semester}}</span>
+            <div><span class="bold-text">Faculty:</span> <span *ngFor="let faculty of selectOptions.faculties"> {{faculty}}<br></span></div>
+        <div><span class="bold-text">Programmes:</span> <span *ngFor="let programme of selectOptions.programmes"> {{programme}}<br></span></div>
+        </div>
+
+        <div class="add"  (click)="uploadCourse()" *ngIf="hideBtn">
+            <span><img src="../../../../assets//admin-icons/Plus icon.svg" alt=""></span>
+        </div>
+    </div>
+
+</div>
+

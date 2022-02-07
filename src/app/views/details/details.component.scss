@@ -1,0 +1,141 @@
+.main-container{
+padding: 0;
+margin: 0;
+overflow-x: hidden;
+
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
+
+    .header{
+    
+     position: sticky;
+     position: -webkit-sticky;
+     top: 0;
+        z-index: 100005645435555545;
+     .back-btn, .more-btn{
+               background-color: rgba(255, 255, 255, 0.3);
+             border-radius: 50%;
+             width: 35px;
+             height: 35px;
+             text-align: center;
+             margin-top: 0em;
+                z-index: 100005645435555545;
+         svg{
+             width: 15px;
+             height: 15px;
+             margin-top: 10px;
+             margin-bottom: auto;
+              z-index: 100005645435555545;
+         }
+     }
+.header-darker{
+ background-color: #f1f5fb;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.dark-bg{
+     background-color: #f1f5fb;
+
+       margin-top: 0;
+        padding: .5em;
+}
+
+  
+     
+    }
+
+    .header .wrapper{
+        display: flex;
+       
+        .more-btn{
+            margin-left: auto;
+        }
+        
+        .library{
+            margin-left: 20px;
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #444746;
+         
+        }
+        
+        .library,.more-btn{
+            opacity: 1;
+            display: block;
+        }
+             padding-bottom: 0;
+             margin-bottom: 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-family:   'Fira Sans', sans-serif !important;
+    .navigation{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1em;
+        overflow-x: scroll;
+        color: #A0A0A0;
+        font-weight: 700px;
+        font-size: 17px;
+
+        padding-top: 20px;
+        box-shadow: 1px 1px black;
+z-index: 5487458475878;
+    z-index: -5667565556555;
+                  background-color: white;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 0;
+    
+            span{
+                padding: 2px;
+                padding-left: 30px;
+                      padding-right: 30px;
+           
+                border-top-left-radius: 10px;
+                 border-top-right-radius: 10px;
+                 margin-top: 10px;
+                 margin-bottom: -1.5px;
+            }
+        }
+
+        .active{
+              color: black;
+            span{
+                     background-color: black;
+            }
+        }
+       
+    }
+
+    .active-tab{
+        display: block;
+    }
+    .inactive-tab{
+        display: none;
+    }
+
+    .book-list-section{
+        margin-top: 20px;
+    }
+}

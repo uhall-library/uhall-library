@@ -1,0 +1,264 @@
+.main-container{
+
+
+       @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+     font-family:   'Fira Sans', sans-serif !important;
+    .header{
+      display: none;
+  
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: sticky;
+     position: -webkit-sticky;
+     top: 0;
+    
+     .back-btn, .more-btn{
+               background-color: rgba(255, 255, 255, 0.3);
+             border-radius: 50%;
+             width: 35px;
+             height: 35px;
+             text-align: center;
+             margin-top: 0em;
+                z-index: 100005645435555545;
+         svg{
+             width: 15px;
+             height: 15px;
+             margin-top: 10px;
+             margin-bottom: auto;
+              z-index: 100005645435555545;
+         }
+     }
+.header-darker{
+    background-color: #f1f5fb;
+  margin-top: 0;
+        padding: .5em;
+  
+}
+
+
+
+     
+    }
+
+    .header .wrapper{
+        display: flex;
+       
+        .more-btn{
+            margin-left: auto;
+        }
+        
+        .library{
+            margin-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+            font-weight: bold;
+            color:  #444746;
+         
+        }
+        
+        .library,.more-btn{
+            opacity: 1;
+            display: block;
+        }
+             padding-bottom: 0;
+             margin-bottom: 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .body-container{
+        padding: 1em;
+        padding-bottom: 1em;
+        padding-top: 0;
+        margin-top: 0;
+        .title-text{
+            font-size: 25px;
+           
+            font-weight: 10px;
+ 
+            padding: 0;
+            margin: 0;
+                       margin-top: 20px;
+        }
+        .select-level-text{
+            font-size: 16px;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+           //margin-top: 20px;
+           
+          // margin-bottom: 10px;
+           
+        }
+        .select-level-text{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .select-course-p{
+        margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 16px;
+       //     color: red;
+        }
+
+        .levels{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 10px;
+           
+
+               margin-top: 10px;
+            .level{
+                text-align: center;
+                padding: 17px;
+                border-radius: 50px;
+                border: 1px solid black;
+            }
+        }
+
+
+     .courses,   .semester{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+              
+          
+        .course,    .sem{
+                   padding: 17px;
+                   border-radius: 50px;
+                width: 50%;   
+             margin-left: auto;
+             margin-right: auto;
+                
+                } 
+        }
+
+        
+        .select-course{
+            margin-top: 2em;
+      
+           
+            
+                  
+            .title-area{
+                display: flex;
+                flex-direction:column;
+                margin-bottom: -20px;
+                font-size: 16px !important;
+                .title{
+                    margin-top: 7px;
+                    font-size: 17.5px;
+                    display: flex;
+                    //color: red;
+                  .done-button, button{
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: -10px;
+    margin-left: auto;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: none;
+}
+     
+                }
+          
+                .faculties{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    margin-bottom: 35px;
+                    margin-top: 10px;
+                    overflow-x: scroll;
+                    
+ 
+        
+
+            span{
+                border: 1px solid black;
+                border-radius: 50px;
+                width: 50px;
+                text-align: center;
+                       padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                     
+         
+            }
+                }
+                span:hover{
+                    background-color: #F5E2E2;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    padding: 10px;
+                        border: 1px solid #BD2A22 !important;
+                     color: #BD2A22;
+                }
+                .active{
+                  background-color: #F5E2E2;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    color: #BD2A22;
+                    padding: 10px;  
+                        border: 1px solid #BD2A22 !important;
+                }
+
+                .inactive{
+                     background-color: white !important;
+                      border: 1px solid black !important;
+                      color: black !important;
+                      font-weight: normal !important;
+                }
+            }
+            .courses{
+                margin-top: .5em;
+          //      padding-top: 10px;
+              //  max-height: 200px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+        //   box-shadow:  -0px -10px  #C4C4C4;
+
+                .course{
+                        width: 89% ;   
+                       
+                    
+                }
+                    .course-item{
+                         border:  1px solid #DD90AA;
+                       color: #DD90AA;
+                    }
+             
+       }
+        }
+    }
+}
+
+.back-btn, .more-btn,.more,.level,.sem:hover{
+    cursor: pointer;
+}

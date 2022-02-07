@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="60" viewBox="0 0 90 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="upload_inactive" data-name="upload inactive" transform="translate(-3830 -2899)">
+    <path id="ic_cloud_upload_24px" class="cls-1" d="M72.563,26.65a28.1,28.1,0,0,0-52.5-7.5A22.491,22.491,0,0,0,22.5,64H71.25a18.7,18.7,0,0,0,1.313-37.35ZM52.5,37.75v15h-15v-15H26.25L45,19,63.75,37.75Z" transform="translate(3830 2895)"/>
+  </g>
+</svg>

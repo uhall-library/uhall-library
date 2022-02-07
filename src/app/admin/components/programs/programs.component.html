@@ -1,0 +1,53 @@
+
+<p>Change styles for Programmes</p>
+
+<div class="main-container">
+
+    <div class="container">
+        <div class="card" *ngFor="let programme of programmes">
+            <div class="wrap-card"  (click)="editProgramme(programme)">
+            <p>{{programme.programme}}</p>
+            <span class="faculty">{{programme.faculty}}</span>
+            <div class="wrap">
+                <div class="colors" >
+                    <span class="color" style=' border: 1px solid {{programme.fontColor}} !important; '>
+                        <span class="color-inner" style='background-color: {{programme.fontColor}};'>
+                            <span></span></span>
+
+                    </span>
+                    Font & Border
+                </div>
+
+                <div class="colors"  *ngIf="programme.bgColor">
+                    <span class="color" style=' border: 1px solid {{programme.bgColor}} !important;  '>
+                        <span class="color-inner" style='background-color: {{programme.bgColor}};'>
+                            <span></span></span>
+
+                    </span>
+                    Selector W
+                </div>
+
+            
+            </div>
+        </div>
+ <div class="image">
+     <button (click)="editProgramme(programme)">Edit</button>
+     <button (click)="confirmDelete(programme.id)">Delete</button>
+ </div>
+  
+    </div>
+ 
+    </div>
+
+    <div class="confirm-delete" id="confirm-delete">
+         Do you really want to delete this programme ?
+         <div class="buttons">
+             <button (click)="cancelDelete()">Cancel</button>
+             <button (click)="deleteProgramme(selectedProgramme)">Delete</button>
+         </div>
+    </div>
+
+    <div class="new-program" id="new-program" (click)="createProgramme()">
+        <img src="../../../../assets//admin-icons/Plus icon.svg" alt="" id="add-img"> New Programme
+    </div>
+</div>

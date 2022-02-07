@@ -1,0 +1,68 @@
+
+
+
+
+
+.li {padding: 20px; background-color:white; margin-bottom: 5px}
+
+.main_container{
+font-family: "Arial"; background-color: #ececec;
+  ul{list-style-type: none; padding: 20px;}
+    
+
+
+.li {padding: 20px; background-color:white !important; margin-bottom: 5px;  color:red}
+
+    width: 100%;
+    height: 100%;
+
+    .login_section{
+           width: 60%;
+        padding: 1em;
+        padding-top: 0;
+        padding-bottom: 1px;
+       box-shadow:  5px 5px #F6FBFF,-3px -3px #F6FBFF ;
+       border-radius: 10px;
+       margin-top: 53%;
+       margin-left: auto;
+       margin-right: auto;
+        .header_area{
+ 
+            svg{
+ width: 80px;
+ margin-top: -1em;
+ margin-left: -20px;
+ padding-left: 0;
+            }
+        }
+
+    }
+    h2{
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "SF UI Text";
+    }
+    .account_section{
+        .account{
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+            img{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                image-rendering: crisp-edges;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: -o-crisp-edges;
+                image-rendering: -webkit-optimize-contrast;
+            }
+            .name
+        {
+            margin-top: 5px;
+        }
+        }
+        .account:hover{
+            cursor: pointer;
+        }
+    }
+}

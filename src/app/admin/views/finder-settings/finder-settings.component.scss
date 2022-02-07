@@ -1,0 +1,115 @@
+.main-container{
+    
+       @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+   .header{
+    background-image: url("../.././../../assets/admin-header.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: sticky !important;
+  //   position: -webkit-sticky !important;
+     top: 0;
+     transition: 0.3s;
+     .back-btn, .more-btn{
+           background-color: rgba(255, 255, 255, 0.3);
+             border-radius: 50%;
+             width: 35px;
+             height: 35px;
+             text-align: center;
+             margin-top: 0em;
+                z-index: 100005645435555545;
+         svg{
+             width: 15px;
+             height: 15px;
+             margin-top: 10px;
+             margin-bottom: auto;
+              z-index: 100005645435555545;
+         }
+     }
+.header-darker{
+  //  background-color: rgba(0,0,0,0.4);
+  margin-top: 0;
+        padding: 1em;
+        padding-bottom: 6px;
+        padding-top: 6px;
+}
+
+
+     
+    }
+
+    .header .wrapper{
+        display: flex;
+        .more-btn{
+            margin-left: auto;
+        }
+        .library{
+            margin-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .library.more-btn{
+            opacity: 1;
+        }
+        
+    }
+
+
+     font-family:   'Fira Sans', sans-serif !important;
+
+    .container{
+        padding: 1em;
+        text-align: left;
+    
+    .settings{
+       
+    }
+    }
+    .finder{
+        background-color: #DFDFDF ;
+        padding: .1em;
+        border-radius: 10px;
+        padding-left: 10px;
+        display: flex;
+        margin-bottom: 20px;
+        svg{
+            width: 30px;
+            height: 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-right: 20px;
+        }
+        p{
+            font-size: 12px;
+                color: #4A4646;
+            svg{
+                padding: 0;
+                margin-left: 5px;margin-right: 5px;
+                margin-top: 0px;
+                width: 5px;
+            }
+        }
+     .title{
+         font-size: 20px;
+         margin-bottom: -20px;
+     }
+
+
+    }
+
+         .cfolder{
+         .desc{
+             svg{
+                 visibility: none;
+             }
+         }
+     }
+
+     text-align: center;
+}
+
+

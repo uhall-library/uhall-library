@@ -1,0 +1,236 @@
+
+.main-container{
+    width: 100%;
+    overflow-x: hidden;
+    
+       @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+   .header{
+     background-image: url("../.././../assets/admin-header.png");
+   // background-color: blue;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: sticky !important;
+     position: -webkit-sticky !important;
+     top: 0;
+     transition: 0.3s;
+     .back-btn, .more-btn{
+           background-color: rgba(255, 255, 255, 0.3);
+             border-radius: 50%;
+             width: 35px;
+             height: 35px;
+             text-align: center;
+             margin-top: 0em;
+                z-index: 100005645435555545;
+         svg{
+             width: 15px;
+             height: 15px;
+             margin-top: 10px;
+             margin-bottom: auto;
+              z-index: 100005645435555545;
+         }
+     }
+.header-darker{
+    background-color: rgba(0,0,0,0.4);
+  margin-top: 0;
+        padding: 1em;
+        padding-bottom: 6px;
+        padding-top: 6px;
+}
+
+
+     
+    }
+
+    .header .wrapper{
+        display: flex;
+        .more-btn{
+            margin-left: auto;
+        }
+        .library{
+            margin-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .library.more-btn{
+            opacity: 1;
+        }
+        
+    }
+
+
+     font-family:   'Fira Sans', sans-serif !important;
+    .profile{
+        display: flex;
+        gap: 1em;
+        padding: 1em;
+        margin-top: 1.5em;
+        margin-bottom: .5em;
+        padding-top: 0;
+        padding-bottom: 0;
+        .image{
+            width: 60px;
+            height:60px;
+            border-radius: 50%;
+            border: 2px solid #6915EB;
+        }
+        .name{
+            margin-top: -15px;
+            h3{
+                margin-bottom: 4px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            span{
+                color:#6915EB;
+                font-size:16px;
+            }
+        }
+        .icon{
+                background-color: #DFDFDF;
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        svg{
+           width: 15px;
+            height: 15px;
+        }
+    }
+
+    
+    .container{
+        padding: 1em;
+    }
+    .finder{
+        background-color: #DFDFDF ;
+        padding: .1em;
+        border-radius: 10px;
+        padding-left: 10px;
+        display: flex;
+        margin-bottom: 30px;
+        svg{
+            width: 30px;
+            height: 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-right: 20px;
+        }
+        p{
+            font-size: 12px;
+            color: #4A4646;
+            svg{
+                padding: 0;
+                margin-left: 5px;margin-right: 5px;
+                margin-top: 0px;
+                margin-bottom: -6px;
+                width: 3px;
+            }
+        }
+     .title{
+         font-size: 20px;
+         margin-bottom: -20px;
+     }
+
+
+    }
+
+         .cfolder{
+         .desc{
+             svg{
+                 visibility: none;
+             }
+         }
+     }
+}
+
+.uploadpop{
+    display: flex;
+    top: auto;
+    bottom: 20px;
+    margin-top: auto;
+    flex-direction: row;
+    position: fixed;
+    
+     width:100%;
+     z-index: 789000000000;
+    .popup{
+           margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+   display: none;
+ margin-bottom: 20px;
+widows: 200px;
+margin-right: 20px;
+ div{
+     font-weight: bold;
+     svg{
+         margin-right: 10px;
+        height: 15px ;
+         width: 20px;
+     }
+     .Icon_Course_Folder{
+        // height: 20px;
+     }
+ }
+    }
+       .icon{
+                background-color: #DFDFDF;
+            margin-left: auto;
+            margin-top: auto;
+            margin-right: 1em;
+            margin-bottom: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            padding: 10px;
+             
+        }
+        svg{
+           width: 15px;
+            height: 15px;
+        }
+}
+
+.componenets{
+
+   
+   
+    
+}
+
+   .request-bg{
+          position: fixed;
+          background-color:  rgba(223, 223, 223, 0.3);
+       
+          transform: translate(-50%, -50%) scale(0);
+          transition: 1ms ease-in-out;
+          border: 1px solid black;
+          border-radius: 10px;
+          z-index: 1;
+           width:700px ;
+           max-width: 80%;
+           padding: .5em;
+           height:1000vh;
+           padding: 20em;
+           text-align: center;
+        }
+
+         .activeRequest {
+         transform: translate(-50%, -50%) scale(1);
+        }
+
+        progress{
+            padding: 20px;
+           // border-radius: 1px;
+          // border: none;
+        }

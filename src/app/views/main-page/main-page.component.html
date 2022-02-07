@@ -1,0 +1,205 @@
+<div class="main-container">
+
+    <div class="header" id="header">
+        <div class="header-darker">
+            <div class="wrapper">
+
+
+                <div class="back-btn" (click)="navLogin()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44.432" height="42.714" viewBox="0 0 44.432 42.714">
+                        <g id="icon_" data-name="icon " transform="translate(-5.813 -5.6)">
+                            <rect id="Rectangle_7" data-name="Rectangle 7" width="41.777" height="7" rx="3.5"
+                                transform="translate(8.468 23.018)" fill="#444746" />
+                            <rect id="Rectangle_77" data-name="Rectangle 77" width="30" height="7" rx="3.5"
+                                transform="translate(5.813 26.813) rotate(-45)" fill="#444746" />
+                            <rect id="Rectangle_78" data-name="Rectangle 78" width="30" height="7" rx="3.5"
+                                transform="translate(27.113 48.314) rotate(-135)" fill="#444746" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="library">Home</div>
+                <div class="more-btn" (click)="toggleMenu(true)">
+                    <svg id="Kebab_icon" data-name="Kebab icon" xmlns="http://www.w3.org/2000/svg" width="10"
+                        height="50" viewBox="0 0 10 50">
+                        <rect id="Rectangle_53" data-name="Rectangle 53" width="10" height="10" rx="5"
+                            transform="translate(10 40) rotate(90)" fill="#444746" />
+                        <rect id="Rectangle_50" data-name="Rectangle 50" width="10" height="10" rx="5"
+                            transform="translate(10 20) rotate(90)" fill="#444746" />
+                        <rect id="Rectangle_51" data-name="Rectangle 51" width="10" height="10" rx="5"
+                            transform="translate(10) rotate(90)" fill="#444746" />
+                    </svg>
+
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+    <div class="body">
+        <div class="news-section">
+           
+        
+        </div>
+
+        <div class="courses-section">
+            <div class="top">
+
+
+                <div class="grid-btn" (click)="changeView()" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33.044" height="33.045" viewBox="0 0 33.044 33.045" *ngIf="!grid_view">
+                        <defs>
+                            <style>
+                                .cls-3 {
+                                    fill: #444746;
+                                }
+                            </style>
+                        </defs>
+                        <path id="grid_view_icon" data-name="grid view icon" class="cls-3"
+                            d="M21.174,33.045a3,3,0,0,1-3-3v-8.87a3,3,0,0,1,3-3h8.87a3,3,0,0,1,3,3v8.87a3,3,0,0,1-3,3ZM3,33.045a3,3,0,0,1-3-3v-8.87a3,3,0,0,1,3-3h8.87a3,3,0,0,1,3,3v8.87a3,3,0,0,1-3,3ZM21.174,14.871a3,3,0,0,1-3-3V3a3,3,0,0,1,3-3h8.87a3,3,0,0,1,3,3v8.87a3,3,0,0,1-3,3ZM3,14.871a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0h8.87a3,3,0,0,1,3,3v8.87a3,3,0,0,1-3,3Z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41.933" height="34" viewBox="0 0 41.933 34"  *ngIf="grid_view">
+                        <defs>
+                            <style>
+                                .cls-3 {
+                                    fill: #444746;
+                                }
+                            </style>
+                        </defs>
+                        <path id="list_view_icon" data-name="list view icon" class="cls-3"
+                            d="M5.9,18.1a3.4,3.4,0,1,0,3.4,3.4A3.4,3.4,0,0,0,5.9,18.1Zm0-13.6A3.4,3.4,0,1,0,9.3,7.9,3.4,3.4,0,0,0,5.9,4.5Zm0,27.2a3.4,3.4,0,1,0,3.4,3.4A3.41,3.41,0,0,0,5.9,31.7Zm6.8,5.667H44.433V32.833H12.7Zm0-13.6H44.433V19.233H12.7Zm0-18.133v4.533H44.433V5.633Z"
+                            transform="translate(-2.5 -4.5)" />
+                    </svg>
+
+                    <div>
+                        {{grid_text}}
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="courses" *ngIf="!grid_view">
+                
+                <div class="course-card" *ngFor="let course of courses" (click)="detailsView(course)"     style='
+                         border:  1.5px solid  {{course.fontColor}};
+                       color: {{course.fontColor}}
+                    '>
+
+                    
+                    <img [src]="course.image" alt="">
+                    <div class="wrap">
+                        <div class="desc">
+                            {{course.course}}
+                        </div>
+                 
+                    </div>
+                        <div class="like">
+                            <svg *ngIf="course?.liked" xmlns="http://www.w3.org/2000/svg" width="27.248" height="25" viewBox="0 0 27.248 25">
+                                <path id="favicon"
+                                    d="M15.624,28l-1.975-1.8C6.632,19.839,2,15.643,2,10.493A7.42,7.42,0,0,1,9.493,3a8.159,8.159,0,0,1,6.131,2.847A8.159,8.159,0,0,1,21.755,3a7.42,7.42,0,0,1,7.493,7.493c0,5.15-4.632,9.346-11.649,15.722Z"
+                                    transform="translate(-2 -3)" fill="#bd2a22" />
+                            </svg>
+                        
+                        </div>
+                </div>
+            </div>
+
+            <div class="grid-view" *ngIf="grid_view" >
+                <div style=' border:  1px solid  {{course.fontColor}}; color: {{course.fontColor}}; ' class="course-card"
+                    *ngFor="let course of courses" (click)="detailsView(course)">
+
+                    <div class="image"
+                        style='background-image: url("{{course.image}}"); background-position: center;background-repeat: no-repeat;background-size: cover;'>
+                        <div class="like" *ngIf="course?.liked">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27.248" height="25" viewBox="0 0 27.248 25">
+                                <path id="favicon"
+                                    d="M15.624,28l-1.975-1.8C6.632,19.839,2,15.643,2,10.493A7.42,7.42,0,0,1,9.493,3a8.159,8.159,0,0,1,6.131,2.847A8.159,8.159,0,0,1,21.755,3a7.42,7.42,0,0,1,7.493,7.493c0,5.15-4.632,9.346-11.649,15.722Z"
+                                    transform="translate(-2 -3)" fill="#bd2a22" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="desc">{{course.course}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="mask">
+            <a class="home" [routerLink]="['/main-page']" routerLinkActive="router-link-active">
+
+<span class="fill-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="70.588" height="60" viewBox="0 0 70.588 60">
+    <defs>
+        <style>
+            .a {
+             
+            }
+        </style>
+    </defs>
+    <path class="a" d="M30.235,63V41.824H44.353V63H62V34.765H72.588L37.294,3,2,34.765H12.588V63Z"
+        transform="translate(-2 -3)" />
+</svg>
+</span>
+                Home
+            </a>
+            <a class="favorites">
+<span class="fill-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="65.395" height="60" viewBox="0 0 65.395 60">
+    <defs>
+        <style>
+            .cls-1 {}
+        </style>
+    </defs>
+    <g id="favicon_inactive" data-name="favicon inactive" transform="translate(-3875 -2715.95)">
+        <path id="favicon" class="cls-1"
+            d="M34.7,63l-4.741-4.316C13.117,43.414,2,33.343,2,20.984A17.809,17.809,0,0,1,19.984,3,19.581,19.581,0,0,1,34.7,9.834,19.581,19.581,0,0,1,49.411,3,17.809,17.809,0,0,1,67.4,20.984c0,12.36-11.117,22.431-27.956,37.733Z"
+            transform="translate(3873 2712.95)" />
+    </g>
+</svg>
+
+</span>
+
+                Favorites</a>
+            <a class="upload" (click)="adminPage()">
+<span class="fill-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="60" viewBox="0 0 90 60">
+        <defs>
+            <style>
+                .cls-1 {
+              
+                }
+            </style>
+        </defs>
+        <g id="upload_inactive" data-name="upload inactive" transform="translate(-3830 -2899)">
+            <path id="ic_cloud_upload_24px" class="cls-1"
+                d="M72.563,26.65a28.1,28.1,0,0,0-52.5-7.5A22.491,22.491,0,0,0,22.5,64H71.25a18.7,18.7,0,0,0,1.313-37.35ZM52.5,37.75v15h-15v-15H26.25L45,19,63.75,37.75Z"
+                transform="translate(3830 2895)" />
+        </g>
+    </svg>
+
+</span>
+                Upload</a>
+            <a class="settings">
+<span class="fill-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="58.363" height="60" viewBox="0 0 58.363 60">
+    <defs>
+        <style>
+            .cls-1 {
+   
+            }
+        </style>
+    </defs>
+    <g id="settings_icon_inactive" data-name="settings icon inactive" transform="translate(-3925.638 -2716)">
+        <path id="ic_settings_24px" class="cls-1"
+            d="M53.749,34.94a23.378,23.378,0,0,0,.21-2.94,23.379,23.379,0,0,0-.21-2.94l6.33-4.95a1.514,1.514,0,0,0,.36-1.92l-6-10.38a1.508,1.508,0,0,0-1.83-.66l-7.47,3a21.918,21.918,0,0,0-5.07-2.94l-1.14-7.95A1.463,1.463,0,0,0,37.459,2h-12a1.463,1.463,0,0,0-1.47,1.26l-1.14,7.95a23.049,23.049,0,0,0-5.07,2.94l-7.47-3a1.463,1.463,0,0,0-1.83.66l-6,10.38a1.479,1.479,0,0,0,.36,1.92l6.33,4.95A23.792,23.792,0,0,0,8.959,32a23.792,23.792,0,0,0,.21,2.94l-6.33,4.95a1.514,1.514,0,0,0-.36,1.92l6,10.38a1.508,1.508,0,0,0,1.83.66l7.47-3a21.918,21.918,0,0,0,5.07,2.94l1.14,7.95A1.463,1.463,0,0,0,25.459,62h12a1.463,1.463,0,0,0,1.47-1.26l1.14-7.95a23.049,23.049,0,0,0,5.07-2.94l7.47,3a1.463,1.463,0,0,0,1.83-.66l6-10.38a1.514,1.514,0,0,0-.36-1.92ZM31.459,42.5A10.5,10.5,0,1,1,41.959,32,10.512,10.512,0,0,1,31.459,42.5Z"
+            transform="translate(3923.367 2714)" />
+    </g>
+</svg>
+</span>
+                Settings</a>
+        </div>
+    </div>
+</div>

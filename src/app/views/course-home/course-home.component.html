@@ -1,0 +1,92 @@
+<div class="main-container" id="main-container" >
+    <div class="header" id="header"  >
+        <div class="header-darker">
+        <div class="wrapper">
+
+
+        <div class="back-btn" (click)="navLogin()">
+<svg xmlns="http://www.w3.org/2000/svg" width="44.432" height="42.714" viewBox="0 0 44.432 42.714">
+    <g id="icon_" data-name="icon " transform="translate(-5.813 -5.6)">
+        <rect id="Rectangle_7" data-name="Rectangle 7" width="41.777" height="7" rx="3.5"
+            transform="translate(8.468 23.018)" fill=" #444746" />
+        <rect id="Rectangle_77" data-name="Rectangle 77" width="30" height="7" rx="3.5"
+            transform="translate(5.813 26.813) rotate(-45)" fill=" #444746" />
+        <rect id="Rectangle_78" data-name="Rectangle 78" width="30" height="7" rx="3.5"
+            transform="translate(27.113 48.314) rotate(-135)" fill=" #444746" />
+    </g>
+</svg>
+        </div>
+            <div class="library">Library</div>
+            <div class="more-btn" (click)="toggleMenu(true)" >
+                <svg id="Kebab_icon" data-name="Kebab icon" xmlns="http://www.w3.org/2000/svg" width="10" height="50"
+                    viewBox="0 0 10 50">
+                    <rect id="Rectangle_53" data-name="Rectangle 53" width="10" height="10" rx="5"
+                        transform="translate(10 40) rotate(90)" fill=" #444746" />
+                    <rect id="Rectangle_50" data-name="Rectangle 50" width="10" height="10" rx="5"
+                        transform="translate(10 20) rotate(90)" fill=" #444746" />
+                    <rect id="Rectangle_51" data-name="Rectangle 51" width="10" height="10" rx="5"
+                        transform="translate(10) rotate(90)" fill=" #444746" />
+                </svg>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+
+ 
+
+    <div class="body-container">
+
+
+        <p class="title-text">
+         Make Course Selections
+        </p>
+        <p class="select-level-text">Select your Level</p>
+            <div class="levels">
+
+                <div *ngFor="let level of levels" class="level" [id]="level.id" (click)="toogleLevel(level.id); filter_Course.level = level.level"   style="border: 1px solid {{level.borderColor}}; color: {{level.fontColor}}">
+                    {{level.level}}
+                </div>
+            </div>
+
+
+
+        <p class="select-course-p">Select your semester</p>
+<div class="semester">
+    <div *ngFor="let semester of semesters" class="sem" [id]="semester.id"  (click)="toogleLevel(semester.id, semesters); filter_Course.semester = semester.semester"  style="border: 1px solid {{semester.borderColor}}; color: {{semester.fontColor}}">
+       Semester {{semester.semester}}
+    </div>
+   
+</div>
+<div class="select-course">
+    <div class="title-area">
+        <div class="title">Select your programme <button class="done-button" id="done-btn" *ngIf="routeParameter=='selection'" (click)="done()">
+            Done
+        </button></div>
+      
+            <div class="faculties" > 
+                <span *ngFor="let faculty of faculties" (click)="getCourses(faculty.faculty, faculty.id,  faculty); toggleFaculty()" [id]="faculty.id" [class.active]="faculty.active" [class.inactive]="!faculty.active" >
+                    {{faculty.faculty.toUpperCase()}}
+                </span>
+            </div>
+    </div>
+<div class="courses">
+    
+    <div style='
+                         border:  1px solid  {{programme.fontColor}};
+                       color: {{programme.fontColor}};
+                       
+                    ' class="course course-item" [id]="programme.id" *ngFor="let programme of  programmesList" (click)="onclickCourse(programme); ">
+        {{programme.programme}}
+    </div>
+
+
+</div>
+
+
+</div>
+    </div>
+
+
+</div>

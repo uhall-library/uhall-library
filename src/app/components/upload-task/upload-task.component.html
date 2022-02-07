@@ -1,0 +1,12 @@
+
+    <div class="uploads" id="uploadsbar">
+        <div class="loading" [id]="title" [style.width]="percent" style="width:{{percent}}">
+
+        </div>
+        <div class="loader">
+            <span>{{title}}  <span class="cancel" *ngIf="cancelled">- cancelled!!!</span></span>
+            <img src="../../../assets/admin-icons/close icon.svg" alt="" *ngIf="progressChange != 100"
+                (click)="task.cancel(); cancelled = true;">
+            <img src="../../../assets/admin-icons/done icon.svg" alt="" class="complete" *ngIf="progressChange == 100">
+        </div>
+    </div>

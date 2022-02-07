@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "uhalllibrary": {
+      "hosting": {
+        "app": [
+          "uhall-library"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "uhall-library"
+  }
+}

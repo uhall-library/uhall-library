@@ -1,0 +1,66 @@
+
+
+<div class="main-container">
+    <div class="header" id="header">
+        <div class="header-darker"  style=" background-image: url('{{bgImage}}');">
+            <div class="dark-bg">
+            <div class="wrapper">
+    
+    
+                <div class="back-btn" (click)="back()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44.432" height="42.714" viewBox="0 0 44.432 42.714">
+                        <g id="icon_" data-name="icon " transform="translate(-5.813 -5.6)">
+                            <rect id="Rectangle_7" data-name="Rectangle 7" width="41.777" height="7" rx="3.5"
+                                transform="translate(8.468 23.018)" fill="#444746" />
+                            <rect id="Rectangle_77" data-name="Rectangle 77" width="30" height="7" rx="3.5"
+                                transform="translate(5.813 26.813) rotate(-45)" fill="#444746" />
+                            <rect id="Rectangle_78" data-name="Rectangle 78" width="30" height="7" rx="3.5"
+                                transform="translate(27.113 48.314) rotate(-135)" fill="#444746" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="library" >{{title}}</div>
+                <div class="more-btn" >
+                    <svg id="Kebab_icon" data-name="Kebab icon" xmlns="http://www.w3.org/2000/svg" width="10" height="50"
+                        viewBox="0 0 10 50">
+                        <rect id="Rectangle_53" data-name="Rectangle 53" width="10" height="10" rx="5"
+                            transform="translate(10 40) rotate(90)" fill="#444746" />
+                        <rect id="Rectangle_50" data-name="Rectangle 50" width="10" height="10" rx="5"
+                            transform="translate(10 20) rotate(90)" fill="#444746" />
+                        <rect id="Rectangle_51" data-name="Rectangle 51" width="10" height="10" rx="5"
+                            transform="translate(10) rotate(90)" fill="#444746" />
+                    </svg>
+    
+                </div>
+            </div>
+    
+      
+    </div>
+        
+        </div>
+
+        <div class="navigation">
+            <div id="slide-1" (click)="slide(0, 'all')">
+                All
+                <span></span>
+            </div>
+            <div id="slide-2" (click)="slide(1, 'passco')">
+                Past Questions
+                <span></span>
+            </div>
+            <div id="slide-3" (click)="slide(2, 'textbook')">
+                Text Books
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="book-list-section">
+      <books-view [data]="books" [bookId]="id"></books-view>
+    </div>
+
+</div>

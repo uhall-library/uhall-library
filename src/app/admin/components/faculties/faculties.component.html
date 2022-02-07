@@ -1,0 +1,36 @@
+<div class="request-bg" id="request-bg" (click)="closeDialog()"></div>
+<p>Change styles for Faculty</p>
+
+<div class="main-container">
+    <div class="color-pallet" id="color-pallet">
+        <div class="color-card">
+            <div class="color-code">
+
+                <div>
+                    Faculty Name
+                </div>
+                <input [(ngModel)]="faculty">
+            </div>
+          
+            <div class="add">
+                <span (click)="changeColor()"><img src="../../../../assets//admin-icons/Plus icon.svg" alt=""></span>
+                <span class="delete" (click)="deleteFaculty()">  Delete</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" >
+        <div class="card" *ngFor="let faculty of faculties" (click)="selectItemtoColor(faculty.id,  faculty.faculty)">
+            <p>{{faculty.faculty}} </p>
+           
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="new-program" (click)="createFaculty()">
+    <img src="../../../../assets//admin-icons/Plus icon.svg" alt=""> Create Faculty
+</div>

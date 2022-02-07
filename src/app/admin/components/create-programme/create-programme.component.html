@@ -1,0 +1,83 @@
+<div class="request-bg" id="request-bg" (click)="closeDialog()"></div>
+
+<div class="color-pallet" id="color-pallet">
+    <div class="color-card">
+        <div class="color-code">
+
+            <div>
+                Color code
+            </div>
+            <input [(ngModel)]="color">
+        </div>
+        <div class="color-pallets">
+            <div class="colors" *ngFor="let color of colorPallet" (click)="setColor(color)">
+                <span class="color" style=' border: 1px solid {{color}} !important;  '>
+                    <span class="color-inner" style='background-color: {{color}};'>
+                        <span></span></span>
+
+                </span>
+
+            </div>
+        </div>
+        <div class="add">
+            <span (click)="changeColor(color)"><img src="../../../../assets//admin-icons/Plus icon.svg" alt=""></span>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="programme-card" id="programme-card">
+    <div class="color-card">
+        <div class="color-code">
+
+            <div>
+                Programme name
+            </div>
+            <input [(ngModel)]="programmeName">
+        </div>
+        <div class="color-pallets">
+            <div class="colors" *ngFor="let fac of faculties"  (click)="switchProgramme(fac.value)" [id]="fac.value">
+                <input type="radio" [name]="fac.id" [id]="fac.value + 's'" >
+                <div>{{fac.name}}</div>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+          
+                    <div class="wrap">
+                        <div class="colors" (click)="selectItemtoColor(programme.programme, 'font')">
+                            <span class="color" style=' border: 1px solid {{programme.fontColor}} !important; '>
+                                <span class="color-inner" style='background-color: {{programme.fontColor}};'>
+                                    <span></span></span>
+        
+                            </span>
+                            Font & Border
+                        </div>
+        
+                        <div class="colors" (click)="selectItemtoColor(programme.programme, 'w')" *ngIf="programme.bgColor">
+                            <span class="color" style=' border: 1px solid {{programme.bgColor}} !important;  '>
+                                <span class="color-inner" style='background-color: {{programme.bgColor}};'>
+                                    <span></span></span>
+        
+                            </span>
+                            Selector W
+                        </div>
+        
+        
+                    </div>
+      
+        
+        </div>
+
+       
+
+        <div class="add" (click)="addProgramme()">
+            <span><img src="../../../../assets//admin-icons/Plus icon.svg" alt=""></span>
+        </div>
+    </div>
+
+</div>

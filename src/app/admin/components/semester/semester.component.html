@@ -1,0 +1,73 @@
+<div class="request-bg" id="request-bg" (click)="closeDialog()"></div>
+<p>Change styles for semester</p>
+
+<div class="main-container">
+    <div class="color-pallet" id="color-pallet">
+        <div class="color-card">
+            <div class="color-code">
+
+                <div>
+                    Color code
+                </div>
+                <input [(ngModel)]="color">
+            </div>
+            <div class="color-pallets">
+                <div class="colors" *ngFor="let color of colorPallet" (click)="setColor(color)">
+                    <span class="color" style=' border: 1px solid {{color}} !important;  '>
+                        <span class="color-inner" style='background-color: {{color}};'>
+                            <span></span></span>
+
+                    </span>
+
+                </div>
+            </div>
+            
+            <div class="add">
+                <span (click)="changeColor(color)"><img src="../../../../assets//admin-icons/Plus icon.svg"
+                        alt=""></span>
+
+                      
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="card" *ngFor="let level of semesters">
+            <p> Semester {{level.level}}</p>
+            <div class="wrap">
+                <div class="colors" (click)="selectItemtoColor(level.level, 'font')">
+                    <span class="color" style=' border: 1px solid {{level.fontColor}} !important; '>
+                        <span class="color-inner" style='background-color: {{level.fontColor}};'>
+                            <span></span></span>
+
+                    </span>
+                    Font & Border
+                </div>
+
+                <div class="colors" (click)="selectItemtoColor(level.level, 'w')">
+                    <span class="color" style=' border: 1px solid {{level.bgColor}} !important;  '>
+                        <span class="color-inner" style='background-color: {{level.bgColor}};'>
+                            <span></span></span>
+
+                    </span>
+                    Selector W
+                </div>
+
+                <div class="colors" (click)="selectItemtoColor(level.level, 'd')">
+                    <span class="color" style=' border: 1px solid {{level.borderColor}} !important;  '>
+                        <span class="color-inner" style='background-color: {{level.borderColor}};'>
+                            <span></span></span>
+
+                    </span>
+                    Selector D
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="save-button">
+        <button (click)="done()">Save</button>
+    </div>
+</div>
+

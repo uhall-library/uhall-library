@@ -1,0 +1,103 @@
+
+
+
+
+<div class=" pallet2" id="pallet2" *ngIf="showpop2" >
+    <div class="color-card">
+        <div class="color-code">
+
+            <div id="title">
+                Confirm Delete <img src="../../../assets//admin-icons/close icon.svg" alt="" (click)="cancelRename()">
+            </div>
+           
+        </div>
+
+        <div class="add" (click)="deleteBook(selectedBook)">
+           Delete
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+    <div class="color-pallet" id="color-pallet" *ngIf="showpop">
+        <div class="color-card">
+            <div class="color-code">
+    
+                <div id="title">
+                    New Name <img src="../../../assets//admin-icons/close icon.svg" alt="" (click)="cancelRename()">
+                </div>
+                <input [(ngModel)]="rename">
+            </div>
+    
+            <div class="add">
+                <img src="../../../assets/admin-icons/Plus icon.svg" alt="" (click)="renameFiles()">
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+<div class="book-card" *ngFor="let book of data">
+   <!--<div class="image" style=" background-image: url('{{book.preview}}')">   </div> --> 
+        <img class="image" [src]="book.preview">
+  
+    <div class="info">
+        <div class="desc">
+            <p class="title">{{book.title}}</p>
+            <span class="size">{{formatBytes(book.size)}}</span>
+        </div>
+
+        <div>
+
+        </div>
+        <svg id="Kebab_icon" data-name="Kebab icon" xmlns="http://www.w3.org/2000/svg" width="10" height="50"
+            viewBox="0 0 10 50" (click)="modelDisplay(book)">
+            <rect id="Rectangle_53" data-name="Rectangle 53" width="10" height="10" rx="5"
+                transform="translate(10 40) rotate(90)" />
+            <rect id="Rectangle_50" data-name="Rectangle 50" width="10" height="10" rx="5"
+                transform="translate(10 20) rotate(90)" />
+            <rect id="Rectangle_51" data-name="Rectangle 51" width="10" height="10" rx="5"
+                transform="translate(10) rotate(90)" />
+        </svg>
+    </div>
+</div>
+
+
+
+<div class="popup-model" id="popup-model">
+    <div class="head">
+        <img src="../../../assets/lib.jpg" alt=""><span>{{selectedBook?.title}}</span>
+        <img class="close" src="../../../assets/admin-icons/close icon.svg" alt="" (click)="modelDismiss()">
+    </div>
+    <div class="group">
+      <div class="button" >
+                <img src="../../../assets/icons/favicon inactive.svg" alt=""> <span>Add to homescreen</span>
+      </div>  
+        <div class="button">
+            <img src="../../../assets/icons/favicon inactive.svg" alt=""> <span>Add to copylink</span>
+        </div>
+    </div>
+        <div class="group">
+            <div class="button" (click)="renameFile()">
+                <img src="../../../assets/icons/favicon inactive.svg" alt="" > <span >Rename</span >
+            </div>
+            <div class="button">
+                <img src="../../../assets/icons/favicon inactive.svg" alt=""> <span>Move</span>
+            </div>
+            <div class="button" (click)="confirmDelete()">
+                <img src="../../../assets/icons/favicon inactive.svg" alt="" > <span>Delete</span>
+            </div>
+        </div>
+      
+</div>

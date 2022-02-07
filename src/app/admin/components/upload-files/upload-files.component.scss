@@ -1,0 +1,129 @@
+.main-container{
+    padding: 1em;
+    padding-top: 2em;
+   .info-title{
+display: flex;
+.upload-count{
+    margin-left: auto;
+    color: #6915EB;
+    font-size: 13px;
+   
+}
+    }
+
+    .selection-area{
+        button{
+            margin-top: 20px;
+            width: 100%;
+            border: none;
+          //  background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+          color: black;
+          box-shadow: 1px 1px 1px 2px #ECECF9;
+        }
+
+        .course-card{
+            margin-top: 20px;
+            border: 1px solid #ECECF9;
+                box-shadow: 1px 1px 1px 0px #ECECF9;
+                 background-color: #DFDFDF;
+           border-radius: 16px;
+            .title{
+                display: flex;
+                background-color: white;
+                .icon{
+                    margin-left: auto;
+                    svg{
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+                padding: 15px;
+                border-top-left-radius: 10px;
+                 border-top-right-radius: 10px;
+            }
+
+            input{
+                width: 95%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                background-color: #DFDFDF;
+                border: none;
+                  border-bottom-left-radius: 10px;
+                 border-bottom-right-radius: 10px;
+                 padding-left: 15px;
+                 font-size: 17px;
+            }
+            input:focus, input:focus{
+                outline: none;
+                border: none;
+            }
+        }
+
+
+        .uploads{
+            display: none;
+            margin-top: 20px;
+            .loader{
+                display: flex;
+                font-size: 14px;
+                padding: 10px;
+                background-color: #DFDFDF;
+                margin-bottom: 10px;
+                span{
+                    margin-top: 5px;
+                }
+                img{
+                
+margin-left: auto;
+width: 13px;
+
+                }
+            }
+
+            .complete{
+                height: 13px;
+margin-right: 10px;
+background-color: white;
+border-radius: 50%;
+padding: 7px;
+margin-right: -3px;
+            }
+        }
+    }
+
+
+}
+
+.upload-btn{
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px #F0F0FA;
+    width: 130px;
+    text-align: center;
+    padding: 0;
+   margin-left: 60%;
+   position: absolute;
+   top: auto;
+   bottom: 10px;
+    svg{
+        width: 23px;
+        margin-top: auto;
+        margin-left: 20px;
+        padding: 0;
+       margin-bottom: auto;
+    }
+    p{
+     margin-top: auto;
+     
+        padding: 0;
+       margin-bottom: auto;
+    }
+}
+
+    .file-input{
+      visibility: none;
+      display: none;
+    }
